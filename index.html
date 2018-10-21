@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Motorcycles Survey Form</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1 id="title">Survey Form</h1>
+    <div id="form-outer">
+                <p id="description">Let us know about your preferences on MX makes</p>
+    <form id="survey-form" method="post" action="index.html">
+            <div class="rowTab">
+                <div class="labels">
+                   <label id="name-label" for="name">* Name </label>
+                </div>
+                <div class="right-tab">
+                    <input autofocus type="text" name="name" id="name" class="input-field" placeholder="Enter your name here" required>
+                </div>
+            </div>
+            <div class="rowTab">
+                <div class="labels">
+                    <label id="email-label" for="email">* Email</label>
+                </div>
+                <div class="right-tab">
+                    <input type="email" name="email" id="email" class="input-field" placeholder="Enter your email here" required>
+                </div>
+            </div>
+            <div class="rowTab">
+                <div class="labels">
+                    <label id="number-label" for="number">* Age</label>
+                </div>
+                <div class="right-tab">
+                    <input type="number" name="number" id="number" min="16" max="100" class="input-field" placeholder="Enter your age here" required>
+                </div>
+            </div>
+            <div class="rowTab">
+                <div class="labels">
+                    <label for="dropdown"> What are your skills</label>
+                </div>
+                <div class="right-tab">
+                    <select id="dropdown" name="dropdown" class="dropdown">
+                        <option disabled value>Select an option</option>
+                        <option value="Amateur">Amateur</option>
+                        <option value="Intermediate">Intermediate</option>
+                        <option value="Pro">Pro</option>
+                    </select>
+                </div>
+            </div>
+                <div class="rowTab">
+                    <div class="labels">
+                    <label for="make">What is your favourite make</label>
+                </div>
+                <div class="right-tab">
+                    <ul id="make" class="tick" style="list-style: none;">
+                        <li class="radio"><label>KTM<input name="radio-buttons" value="1" type="radio" class="make"> </label></li>
+                        <li class="radio"><label>Honda<input name="radio-buttons" value="2" type="radio" class="make"> </label></li>
+                        <li class="radio"><label>Husqvarna<input name="radio-buttons" value="3" type="radio" class="make"> </label></li>
+                        <li class="radio"><label>Kawasaki<input name="radio-buttons" value="4" type="radio" class="make"> </label></li>
+                        <li class="radio"><label>Suzuki<input name="radio-buttons" value="5" type="radio" class="make"> </label></li>
+                        <li class="radio"><label>Beta<input name="radio-buttons" value="6" type="radio" class="make"> </label></li>
+                        <li class="radio"><label>GasGas<input name="radio-buttons" value="7" type="radio" class="make"> </label></li>
+                        <li class="radio"><label>Yamaha<input name="radio-buttons" value="8" type="radio" class="make"> </label></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="rowTab">
+                <div class="labels">
+                    <label for="favourite">What is your favourite thing in your best make</label>
+                </div>
+                <div class="right-tab">
+                    <select id="favourite" name="favourite" class="dropdown">
+                        <option disabled value>Select option</option>
+                        <option value="Engine">Engine</option>
+                        <option value="Agility">Agility</option>
+                        <option value="Traction">Traction</option>
+                        <option value="Weight">Weight</option>
+                    </select>
+                </div>
+            </div>
+            <div class="rowTab">
+                <div class="labels" id="long">
+                    <label for="preferences"> What are your other preferences<br> (check all that apply)</label>
+                </div>
+                <div class="right-tab">
+                    <ul id="preferences" class="tick" style="list-style: none;">
+                        <li class="checkbox"><label><input name="pref" value="1" type="checkbox" class="userRatings">Dynamics</label></li>
+                        <li class="checkbox"><label><input name="pref" value="2" type="checkbox" class="userRatings">Power</label></li>
+                        <li class="checkbox"><label><input name="pref" value="3" type="checkbox" class="userRatings">Torque</label></li>
+                        <li class="checkbox"><label><input name="pref" value="4" type="checkbox" class="userRatings">Suspension</label></li>
+                        <li class="checkbox"><label><input name="pref" value="5" type="checkbox" class="userRatings">Ergonomics & comfort</label></li>
+                        <li class="checkbox"><label><input name="pref" value="6" type="checkbox" class="userRatings">Wildness</label></li>
+                        <li class="checkbox"><label><input name="pref" value="7" type="checkbox" class="userRatings">Predictability</label></li>
+                        <li class="checkbox"><label><input name="pref" value="8" type="checkbox" class="userRatings">Stability</label></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="rowTab">
+                <div class="labels">
+                    <label for="comments"> Comments and suggestions</label>
+                </div>
+                <div class="right-tab">
+                <textarea id="comments" class="input-field" style="height: 50px;resize: vertical" name="comment" placeholder="Enter your comment here.."></textarea>
+                </div>
+            </div>
+            <button id="submit" type="submit">Submit</button>
+        </form>
+            </div>
+    </body>
+</html>
